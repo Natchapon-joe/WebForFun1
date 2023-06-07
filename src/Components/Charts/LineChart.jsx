@@ -3,15 +3,15 @@ const LineChart = () => {
   const chartDetail = {
     series: [
       {
-        name: "Session Duration",
+        name: "Total Reach",
         data: [45, 52, 38, 24, 33, 26, 21, 20, 6, 8, 15, 10],
       },
       {
-        name: "Page Views",
+        name: "Total Paid Reach",
         data: [35, 41, 62, 42, 13, 18, 29, 37, 36, 51, 32, 35],
       },
       {
-        name: "Total Visits",
+        name: "Total Organic Reach",
         data: [87, 57, 74, 99, 75, 38, 62, 47, 82, 56, 45, 47],
       },
     ],
@@ -44,6 +44,7 @@ const LineChart = () => {
           );
         },
       },
+      colors: ["#047efa", "#23af72", "#fd209b"],
       markers: {
         size: 0,
         hover: {

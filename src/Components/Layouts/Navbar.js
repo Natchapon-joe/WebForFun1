@@ -8,29 +8,25 @@ import analytics from "../../Assets/Icons/analytics.svg";
 import file from "../../Assets/Icons/file.svg";
 import settings from "../../Assets/Icons/settings.svg";
 import questionmark from "../../Assets/Icons/questionmark.svg";
-import vectorLeft from "../../Assets/Icons/vectorLeft.svg";
 import search from "../../Assets/Icons/search.svg";
 import ring from "../../Assets/Icons/ring.svg";
 import arrowdown from "../../Assets/Icons/arrowdown.svg";
 // image
 import profilemock from "../../Assets/Images/profilemock.svg";
-import { useState } from "react";
-import classNames from "classnames";
 const Navbar = ({ children }) => {
-  const [slide, setSlide] = useState(false);
+  //   const [slide, setSlide] = useState(false);
   return (
     <div className="bg-[#E5E5E5]">
       <div className="flex">
         <div
-          className={classNames(
-            "bg-[#081A51] w-full max-w-[260px] h-full max-h-[1064px] left-0 border-[1px] border-[#000000] relative shadow-sm hidden md:block"
-          )}
-          style={{
-            transition: "transform 0.3s ease",
-            transform: slide ? "translateX(-100%)" : "translateX(0)",
-          }}
+          className="bg-[#081A51] w-full max-w-[260px] h-full max-h-[1064px] left-0 border-[1px] border-[#000000] relative shadow-sm hidden md:block"
+
+          //   style={{
+          //     transition: "transform 0.3s ease",
+          //     transform: slide ? "translateX(-100%)" : "translateX(0)",
+          //   }}
         >
-          <div
+          {/* <div
             className="absolute top-6 bg-white w-[40px] h-[40px] rounded-[20px] flex items-center justify-center border-[#DADADA] border-[2px] -right-[22px] cursor-pointer"
             onClick={() => setSlide(!slide)}
           >
@@ -39,7 +35,7 @@ const Navbar = ({ children }) => {
             ) : (
               <img src={vectorLeft} alt="vector left" />
             )}
-          </div>
+          </div> */}
           <div className="flex flex-row text-start items-center pl-[30px] pt-[24px] align-middle">
             <img
               src={lightning}

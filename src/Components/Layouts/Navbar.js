@@ -16,7 +16,7 @@ import arrowdown from "../../Assets/Icons/arrowdown.svg";
 import profilemock from "../../Assets/Images/profilemock.svg";
 import { useState } from "react";
 import classNames from "classnames";
-const Navbar = () => {
+const Navbar = ({ children }) => {
   const [slide, setSlide] = useState(false);
   return (
     <div className="bg-[#E5E5E5]">
@@ -120,6 +120,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+        {/* top bar */}
         <div className="w-full">
           <div className="w-full max-h-[90px] flex flex-row bg-white right-0">
             <div className="my-[10px] ml-[58px] flex-1 hidden  md:block">
@@ -154,7 +155,7 @@ const Navbar = () => {
               <img src={arrowdown} alt="arrow down" />
             </div>
           </div>
-          <div className="w-full">asdad</div>
+          <div className="w-full">{children}</div>
         </div>
       </div>
     </div>

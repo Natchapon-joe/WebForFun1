@@ -15,6 +15,8 @@ import {
 import LineChart from "../../Components/Charts/LineChart";
 import TopChannelChildren from "./Components/TopChannelChildren";
 const Home = () => {
+  const mutiple = "2" * "1";
+  console.log(typeof ("2" * "1"));
   const [buttonIndex, setButtonIndex] = useState(0);
   const mockUpButtonGroup = [
     {
